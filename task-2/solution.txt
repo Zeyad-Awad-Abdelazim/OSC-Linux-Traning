@@ -1,0 +1,23 @@
+  1- git config --global user.name Zeyad-Awad-Abdelazim
+  2- git config --global user.email zeyad.mohamed0706@gmail.com
+  3- git clone https://github.com/Zeyad-Awad-Abdelazim/OSC-Linux-Traning.git Zeyad
+  4- cd Zeyad
+  5- mkdir task-2
+  6- cd task-2
+  7- touch greeting.txt
+  8- nano greeting.txt 
+  9- cd ..
+  10- git add .
+  11- git commit -m "Added greeting"
+  12- git branch intro
+  13- git checkout intro
+  14- cd task-2
+  15- nano greeting.txt 
+  16- cd ..
+  17- git add .
+  18- git commit -m "Added I love git"
+  19- git checkout main
+  20- git merge intro
+  21- git tag -a v1 -m "First Release"
+  22- git push origin main
+   
