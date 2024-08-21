@@ -1,0 +1,60 @@
+1 - mkdir project_files
+2 - cd project_files/
+3 - mkdir reports logs data
+4 - cd reports/
+5 - touch report1.md report2.md
+6 - cd .. 
+7 - cd logs
+8 - touch system.log error.log file1.pdf file2.pdf
+9 - cd ..
+10 - cd data
+11 - touch data.csv
+12 - touch info.txt
+13 - nano data.csv 
+14 - cd ..
+15 - cd logs
+16 - nano system.log 
+17 - cd ..
+18 - cd reports/
+19 - nano report1.md
+20 - cd ..
+21 - cd logs/
+22 - tar -cvf logs_backup.tar error.log file1.pdf file2.pdf system.log
+23 - sudo mv logs_backup.tar ~/project_files/ 
+24 - cd ..
+25 - tar -xvf logs_backup.tar -C ~/project_files/logs/
+26 - cd ~
+27 - find ~ -name "*.md"
+28 - find ~/project_files/ -name "*.log"
+29 - find ~/project_files/ -type f -name "file1.pdf"
+30 - find ~/project_files/ -type f -iname "*.pdf"
+31 - find ~/project_files/logs -type f
+32 - cd ~/project_files/
+33 - ln -s ~/project_files/data/data.csv ~/project_files/link_data.csv
+34 - cd link_data.csv
+35 - nano link_data.csv 
+36 - cd data/
+37 - cat data.csv 
+38 - cd ..
+39 - unlink link_data.csv
+40 - touch summary.txt
+41 - echo "Summary Start" > summary.txt 
+42 - date | tee >> summary.txt
+43 - wc -l summary.txt | tee -a summary.txt  
+44 - cd reports/
+45 - wc -w report1.md
+46 - cd ..
+47 - cd logs/
+48 - wc -c system.log | tee >> ~/project_files/summary.txt 
+49 - cd ../..
+50 - find ~/project_files/ -type f -o -type d |wc -l | tee -a ~/project_files/summary.txt 
+51 - cd project_files/
+52 - cat summary.txt 
+ 
+
+
+
+ 
+
+
+
