@@ -1,0 +1,17 @@
+ 1 - sudo useradd -m newuser
+ 2 - sudo groupadd newgroup
+ 3 - sudo usermod -a -G newgroup newuser
+ 4 - groups newuser
+ 5 - mkdir task_dir
+ 6 - cd task_dir/
+ 7 - touch sample.txt
+ 8 - chmod 640 sample.txt 
+ 9 - sudo chown newuser sample.txt 
+ 10 - sudo chgrp newgroup sample.txt 
+ 11 - sudo groupdel newgroup
+ 12 - sudo userdel -r newuser
+ 13 - sudo apt update
+ 14 - sudo apt install lolcat
+ 15 - echo "Iam ZEZO the GM" | lolcat
+ 16 - sudo apt remove lolcat
+  
